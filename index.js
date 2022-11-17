@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    renderCurrentTime();
+    renderCurrentTime()
+	setInterval("renderCurrentTime()", 1000);
     renderQuote();
 });
 
