@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-		<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
@@ -10,42 +11,56 @@
     <title>My Home Screen</title>
 
 
+
     <script src="index.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+
         * {
             font-family: 'Poppins', sans-serif;
-        }  
-        
-        body {
-            background-image: url("https://wallpaperaccess.com/full/2029165.jpg");
-            background-position: center;
-	    background-size: cover;	
-            color: white;       
         }
+
+
+        body {
+            margin: 0;
+        }
+
+
+        .container {
+            background-image: url("https://wallpaperaccess.com/full/2029165.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
 
         .time {
             font-size: 100px;
             font-weight: bold;
         }
 
+
         .greeting {
             font-size: 50px;
         }
 
+
         .todo {
             font-size: 30px;
         }
+
 
         .author {
             font-size: 25px;
             font-style: italic;
         }
 
+
         .main {
             width: 100vw;
             height: 80vh;
+
 
             display: flex;
             flex-direction: column;
@@ -53,7 +68,8 @@
             justify-content: center;
         }
 
-       .quote {
+
+        .quote {
             width: 80vw;
             height: 20vh;
 
@@ -68,21 +84,27 @@
         }
     </style>
 
+
     <script>
     </script>
 </head>
 
+
 <body>
-    <div class="main">
-        <div id="time" class="time">12:32</div>
-        <div class="greeting">Hello, Elle!</div>
-        <div class="todo">Save money ! </div>
+    <div class="container">
+        <div class="main">
+            <div id="time" class="time">12:32</div>
+            <div class="greeting">Hello, Elle!</div>
+            <div class="todo">Save money ! </div>
+        </div>
+        <div class="quote">
+            <div id="author" class="author">- Quote Author -</div>
+            <div id="content" class="content">" Quote Content "</div>
+        </div>
     </div>
-    <div class="quote">
-        <div id="author" class="author">- Quote Author -</div>
-        <div id="content" class="content">" Quote Content "</div>
-    </div> 
+
 
 </body>
+
 
 </html>
