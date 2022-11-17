@@ -36,7 +36,7 @@ function renderQuote() {
     function renderRandomImage() {
       let imageList = [];
       // 이미지 개수를 변경하려면 i=5의 값을 이미지 개수만큼 바꿔주세요!
-      for (i = 0; i < 7; i++) {
+      for (i = 0; i < 8; i++) {
         imageList.push(i);
       }
       let imageListLength = imageList.length;
